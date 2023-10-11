@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91C8B952AD5FABD00282841 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C8B942AD5FABD00282841 /* CollectionTableViewCell.swift */; };
+		A91C8BE12AD6352D00282841 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C8BE02AD6352D00282841 /* Appetizer.swift */; };
+		A91C8BE32AD6360800282841 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C8BE22AD6360800282841 /* NetworkManager.swift */; };
+		A91C8BE62AD636E200282841 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C8BE52AD636E200282841 /* APError.swift */; };
 		A9FC4C502AD5ED100045AABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC4C4F2AD5ED100045AABC /* AppDelegate.swift */; };
 		A9FC4C522AD5ED100045AABC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC4C512AD5ED100045AABC /* SceneDelegate.swift */; };
-		A9FC4C542AD5ED100045AABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC4C532AD5ED100045AABC /* ViewController.swift */; };
+		A9FC4C542AD5ED100045AABC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC4C532AD5ED100045AABC /* MainViewController.swift */; };
 		A9FC4C572AD5ED100045AABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FC4C552AD5ED100045AABC /* Main.storyboard */; };
 		A9FC4C592AD5ED110045AABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FC4C582AD5ED110045AABC /* Assets.xcassets */; };
 		A9FC4C5C2AD5ED110045AABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FC4C5A2AD5ED110045AABC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A91C8B942AD5FABD00282841 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		A91C8BE02AD6352D00282841 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		A91C8BE22AD6360800282841 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A91C8BE52AD636E200282841 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		A9FC4C4C2AD5ED100045AABC /* PrepareForAirbnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrepareForAirbnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FC4C4F2AD5ED100045AABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9FC4C512AD5ED100045AABC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9FC4C532AD5ED100045AABC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9FC4C532AD5ED100045AABC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A9FC4C562AD5ED100045AABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9FC4C582AD5ED110045AABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9FC4C5B2AD5ED110045AABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +45,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A91C8B932AD5FAAC00282841 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A91C8B942AD5FABD00282841 /* CollectionTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A91C8B962AD5FB6E00282841 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A9FC4C532AD5ED100045AABC /* MainViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A91C8BDD2AD632DB00282841 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A91C8BE42AD636CF00282841 /* Alert */,
+				A91C8BDE2AD632EB00282841 /* NetworkManager */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A91C8BDE2AD632EB00282841 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				A91C8BE22AD6360800282841 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		A91C8BDF2AD6352100282841 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A91C8BE02AD6352D00282841 /* Appetizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A91C8BE42AD636CF00282841 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				A91C8BE52AD636E200282841 /* APError.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		A9FC4C432AD5ED100045AABC = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +113,12 @@
 		A9FC4C4E2AD5ED100045AABC /* PrepareForAirbnb */ = {
 			isa = PBXGroup;
 			children = (
+				A91C8BDF2AD6352100282841 /* Model */,
+				A91C8BDD2AD632DB00282841 /* Utilities */,
+				A91C8B962AD5FB6E00282841 /* Screens */,
+				A91C8B932AD5FAAC00282841 /* Views */,
 				A9FC4C4F2AD5ED100045AABC /* AppDelegate.swift */,
 				A9FC4C512AD5ED100045AABC /* SceneDelegate.swift */,
-				A9FC4C532AD5ED100045AABC /* ViewController.swift */,
 				A9FC4C552AD5ED100045AABC /* Main.storyboard */,
 				A9FC4C582AD5ED110045AABC /* Assets.xcassets */,
 				A9FC4C5A2AD5ED110045AABC /* LaunchScreen.storyboard */,
@@ -138,7 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9FC4C542AD5ED100045AABC /* ViewController.swift in Sources */,
+				A91C8BE32AD6360800282841 /* NetworkManager.swift in Sources */,
+				A91C8BE12AD6352D00282841 /* Appetizer.swift in Sources */,
+				A9FC4C542AD5ED100045AABC /* MainViewController.swift in Sources */,
+				A91C8B952AD5FABD00282841 /* CollectionTableViewCell.swift in Sources */,
+				A91C8BE62AD636E200282841 /* APError.swift in Sources */,
 				A9FC4C502AD5ED100045AABC /* AppDelegate.swift in Sources */,
 				A9FC4C522AD5ED100045AABC /* SceneDelegate.swift in Sources */,
 			);
