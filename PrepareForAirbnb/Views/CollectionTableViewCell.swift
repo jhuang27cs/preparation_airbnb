@@ -51,7 +51,7 @@ class CollectionTableViewCell: UITableViewCell {
         customImageView.widthAnchor.constraint(equalToConstant: self.bounds.width-40).isActive = true
         stackView.addArrangedSubview(UIView())
         self.titleLbl.textAlignment = .left
-        self.titleLbl.backgroundColor = .darkGray
+//        self.titleLbl.backgroundColor = .darkGray
         stackView.addArrangedSubview(self.titleLbl)
 //        let layoutDefaultLowPriority = UILayoutPriority(rawValue: UILayoutPriority.defaultLow.rawValue-1)
 //        let layoutDefaultHighPriority = UILayoutPriority(rawValue: UILayoutPriority.defaultHigh.rawValue-1)
@@ -78,5 +78,10 @@ class CollectionTableViewCell: UITableViewCell {
                 
             }
         }
+    }
+    
+    override func select(_ sender: Any?) {
+        super.select(sender)
+        printContent("selected")
     }
 }
